@@ -4,6 +4,7 @@ from selene import by, be
 from selene.support.shared import browser
 from selene.support.shared.jquery_style import s
 
+
 @allure.tag("web")
 @allure.severity(Severity.MINOR)
 @allure.label("owner", "e.goldinova")
@@ -11,7 +12,6 @@ from selene.support.shared.jquery_style import s
 @allure.feature("Search issue on githib")
 @allure.link('https://github.com', name='Testing')
 def test_find_issue_on_github_with_steps():
-
     with allure.step("Open main page"):
         browser.open("https://github.com")
 
