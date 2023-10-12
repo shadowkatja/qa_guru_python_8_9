@@ -9,7 +9,7 @@ from selene.support.shared.jquery_style import s
 @allure.severity(Severity.MINOR)
 @allure.label("owner", "e.goldinova")
 @allure.description("Test with allure steps")
-@allure.feature("Search issue on githib")
+@allure.feature("Search issue on github")
 @allure.link('https://github.com', name='Testing')
 def test_find_issue_on_github_with_decorators():
     open_main_page()
