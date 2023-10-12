@@ -15,12 +15,12 @@ def test_find_issue_on_github_with_steps():
     with allure.step("Open main page"):
         browser.open("https://github.com")
 
-    with allure.step("Find directory"):
+    with allure.step("Find repository"):
         s(".header-search-button").click()
         s("#query-builder-test").send_keys("eroshenkoam/allure-example")
         s("#query-builder-test").submit()
 
-    with allure.step("Go to directory"):
+    with allure.step("Go to repository"):
         s(by.link_text("eroshenkoam/allure-example")).click()
 
     with allure.step("Go to Issues tab"):
